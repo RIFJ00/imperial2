@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>皇統の主要な分岐点</title>
+    <!-- Tailwind CSSを読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* フォント設定 */
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* モーダルのトランジション */
+        #modal.hidden {
+            display: none;
+        }
+        #modal-overlay {
+            transition: opacity 0.3s ease-in-out;
+        }
+        #modal-content {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 sm:p-8">
+
+    <div class="w-full max-w-6xl mx-auto bg-white rounded-2xl shadow-lg p-6 sm:p-8">
+        <header class="text-center mb-12">
+            <h1 class="text-2xl sm:text-3xl font-bold text-gray-800">皇統の主要な分岐点</h1>
+            <p class="text-gray-500 mt-2">古代から現代までの主要な流れと転換点</p>
+        </header>
+        
+        <!-- 皇統図コンテナ -->
+        <div class="relative max-w-4xl mx-auto px-4">
+            <!-- 縦線 -->
+            <div class="absolute top-0 h-full w-1 bg-blue-200 left-4 md:left-1/2 -translate-x-1/2"></div>
+            
+            <!-- 神武天皇 (開始点) -->
+            <div class="relative mb-12">
+                <div class="absolute w-5 h-5 bg-blue-600 rounded-full z-10 left-4 md:left-1/2 -translate-x-1/2"></div>
+                <div class="ml-12 md:ml-0 md:text-center">
+                    <div class="emperor-box cursor-pointer hover:scale-105 transition-transform duration-200 bg-blue-600 text-white p-3 rounded-lg font-semibold z-10 shadow-md inline-block"
+                         data-title="神武天皇"
+                         data-description="日本の初代天皇と伝えられる伝説上の人物である。『日本書紀』や『古事記』において、皇室の祖とされている。">
+                        神武天皇 <span class="text-sm font-normal">初代（伝承）</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 継体天皇 (左) -->
+            <div class="relative mb-12">
+                <div class="absolute w-5 h-5 bg-blue-600 rounded-full z-10 left-4 md:left-1/2 -translate-x-1/2 mt-2"></div>
+                <div class="w-full ml-12 md:ml-0 md:w-1/2 md:pr-10">
+                    <div class="bg-blue-50 p-4 rounded-lg shadow-md md:text-right">
+                        <div class="emperor-box cursor-pointer hover:scale-105 transition-transform duration-200 bg-blue-600 text-white p-3 rounded-lg font-semibold z-10 shadow-md inline-block mb-2"
+                             data-title="継体天皇"
+                             data-description="6世紀初頭の第26代天皇である。応神天皇の5世孫とされ、血縁的に遠い皇族から即位した。これにより男系継承の重要性が確立されたと考えられている。">
+                            継体天皇 <span class="text-sm font-normal">第26代</span>
+                        </div>
+                        <h3 class="font-semibold text-blue-800">血統の転換点</h3>
+                        <p class="text-sm text-gray-600">血縁的に遠い皇族からの即位であり、男系継承の原則が意識される契機となる。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 推古天皇 (右) -->
+            <div class="relative mb-12">
+                <div class="absolute w-5 h-5 bg-amber-500 rounded-full z-10 left-4 md:left-1/2 -translate-x-1/2 mt-2"></div>
+                <div class="w-full ml-12 md:w-1/2 md:ml-[50%] md:pl-10">
+                    <div class="bg-amber-50 p-4 rounded-lg shadow-md">
+                        <div class="emperor-box cursor-pointer hover:scale-105 transition-transform duration-200 bg-amber-500 text-white p-3 rounded-lg font-semibold z-10 shadow-md inline-block mb-2"
+                             data-title="推古天皇"
+                             data-description="日本初の女性天皇（第33代）である。聖徳太子を摂政とし、冠位十二階や十七条憲法の制定など、飛鳥・奈良時代の政治・文化の発展に大きく貢献した。">
+                            推古天皇 <span class="text-sm font-normal">第33代</span>
+                        </div>
+                        <h3 class="font-semibold text-amber-800">初の女性天皇</h3>
+                        <p class="text-sm text-gray-600">飛鳥・奈良時代には推古天皇を含め、計8人の女性天皇が即位した。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 桓武天皇 (左) -->
+            <div class="relative mb-12">
+                <div class="absolute w-5 h-5 bg-blue-600 rounded-full z-10 left-4 md:left-1/2 -translate-x-1/2 mt-1"></div>
+                 <div class="w-full ml-12 md:ml-0 md:w-1/2 md:pr-10 md:text-right">
+                    <div class="emperor-box cursor-pointer hover:scale-105 transition-transform duration-200 bg-blue-600 text-white p-3 rounded-lg font-semibold z-10 shadow-md inline-block"
+                         data-title="桓武天皇"
+                         data-description="第50代天皇である。長岡京、続いて平安京への遷都を行い、平安時代の基礎を築いた。征夷大将軍の坂上田村麻呂を派遣し、蝦夷征討も行った。">
+                        桓武天皇 <span class="text-sm font-normal">第50代</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 後嵯峨天皇 (右) -->
+            <div class="relative mb-12">
+                <div class="absolute w-5 h-5 bg-red-600 rounded-full z-10 left-4 md:left-1/2 -translate-x-1/2 mt-2"></div>
+                <div class="w-full ml-12 md:w-1/2 md:ml-[50%] md:pl-10">
+                     <div class="bg-red-50 p-4 rounded-lg shadow-md">
+                        <div class="emperor-box cursor-pointer hover:scale-105 transition-transform duration-200 bg-red-600 text-white p-3 rounded-lg font-semibold z-10 shadow-md inline-block mb-2"
+                             data-title="後嵯峨天皇"
+                             data-description="第88代天皇である。彼の死後、その息子たちの系統（持明院統と大覚寺統）が皇位を巡って対立し、後の南北朝の動乱につながる原因となった。">
+                            後嵯峨天皇 <span class="text-sm font-normal">第88代</span>
+                        </div>
+                        <h3 class="font-semibold text-red-800">南北朝分裂の契機</h3>
+                        <div class="flex flex-wrap text-sm text-gray-600 mt-1">
+                            <span class="mr-4"><b>南朝 (大覚寺統):</b> 後醍醐天皇など</span>
+                            <span><b>北朝 (持明院統):</b> 光厳天皇など</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- 後小松天皇 (左) -->
+            <div class="relative mb-12">
+                <div class="absolute w-5 h-5 bg-blue-600 rounded-full z-10 left-4 md:left-1/2 -translate-x-1/2 mt-2"></div>
+                <div class="w-full ml-12 md:ml-0 md:w-1/2 md:pr-10">
+                    <div class="bg-blue-50 p-4 rounded-lg shadow-md md:text-right">
+                        <div class="emperor-box cursor-pointer hover:scale-105 transition-transform duration-200 bg-blue-600 text-white p-3 rounded-lg font-semibold z-10 shadow-md inline-block mb-2"
+                             data-title="後小松天皇"
+                             data-description="北朝の天皇であったが、1392年に南朝の後亀山天皇から三種の神器を受け継ぎ、南北朝の合一を実現した。これにより約60年続いた動乱が終結した。">
+                            後小松天皇 <span class="text-sm font-normal">第100代</span>
+                        </div>
+                        <h3 class="font-semibold text-blue-800">南北朝の合一</h3>
+                        <p class="text-sm text-gray-600">これ以降の皇統は北朝の血統であるが、南朝を正統とするのが通説である。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 世襲親王家の創設 (右) -->
+            <div class="relative mb-12">
+                <div class="absolute w-5 h-5 bg-green-600 rounded-full z-10 left-4 md:left-1/2 -translate-x-1/2 mt-2"></div>
+                <div class="w-full ml-12 md:w-1/2 md:ml-[50%] md:pl-10">
+                    <div class="bg-green-50 p-4 rounded-lg shadow-md">
+                        <h3 class="font-semibold text-green-800">世襲親王家の創設</h3>
+                        <p class="text-sm text-gray-600">江戸時代初期、皇統の断絶に備え、皇族が当主を世襲する宮家が創設された。伏見宮家に加え、<b>桂宮家</b>や<b>有栖川宮家</b>がこれにあたる。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 閑院宮家の創設 (左) -->
+            <div class="relative mb-12">
+                <div class="absolute w-5 h-5 bg-green-600 rounded-full z-10 left-4 md:left-1/2 -translate-x-1/2 mt-2"></div>
+                <div class="w-full ml-12 md:ml-0 md:w-1/2 md:pr-10">
+                    <div class="bg-green-50 p-4 rounded-lg shadow-md md:text-right">
+                        <h3 class="font-semibold text-green-800">閑院宮家の創設</h3>
+                        <p class="text-sm text-gray-600">1710年、東山天皇の皇子を初代とし、新たな世襲親王家である<b>閑院宮家</b>が創設された。これにより四親王家（伏見・桂・有栖川・閑院）体制が確立した。</p>
+                    </div>
+                </div>
+            </div>
+            
+             <!-- 光格天皇 (右) -->
+            <div class="relative mb-12">
+                <div class="absolute w-5 h-5 bg-blue-600 rounded-full z-10 left-4 md:left-1/2 -translate-x-1/2 mt-1"></div>
+                 <div class="w-full ml-12 md:w-1/2 md:ml-[50%] md:pl-10">
+                    <div class="emperor-box cursor-pointer hover:scale-105 transition-transform duration-200 bg-blue-600 text-white p-3 rounded-lg font-semibold z-10 shadow-md inline-block"
+                         data-title="光格天皇"
+                         data-description="江戸時代後期の第119代天皇である。閑院宮家から即位し、約100年ぶりに天皇の権威復興に努めた。これが後の尊王思想に影響を与えた。">
+                        光格天皇 <span class="text-sm font-normal">第119代</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 伏見宮邦家親王 (左) -->
+            <div class="relative mb-12">
+                <div class="absolute w-5 h-5 bg-green-600 rounded-full z-10 left-4 md:left-1/2 -translate-x-1/2 mt-1"></div>
+                <div class="w-full ml-12 md:ml-0 md:w-1/2 md:pr-10">
+                     <div class="bg-green-50 p-4 rounded-lg shadow-md md:text-right">
+                        <div class="emperor-box cursor-pointer hover:scale-105 transition-transform duration-200 bg-green-600 text-white p-3 rounded-lg font-semibold z-10 shadow-md inline-block mb-2"
+                             data-title="伏見宮邦家親王"
+                             data-description="江戸時代後期から明治時代にかけての皇族である。20人以上の子女に恵まれ、その子孫から近代の11宮家（久邇宮、賀陽宮、朝香宮など）が創設され、皇室を支えた。">
+                            伏見宮邦家親王
+                        </div>
+                        <h3 class="font-semibold text-green-800">近代宮家の祖</h3>
+                        <p class="text-sm text-gray-600">その子孫から近代11宮家が派生し、皇統のバックアップとなった。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 明治天皇 (右) -->
+            <div class="relative mb-12">
+                <div class="absolute w-5 h-5 bg-blue-600 rounded-full z-10 left-4 md:left-1/2 -translate-x-1/2 mt-1"></div>
+                 <div class="w-full ml-12 md:w-1/2 md:ml-[50%] md:pl-10">
+                    <div class="emperor-box cursor-pointer hover:scale-105 transition-transform duration-200 bg-blue-600 text-white p-3 rounded-lg font-semibold z-10 shadow-md inline-block"
+                         data-title="明治天皇"
+                         data-description="第122代天皇である。江戸幕府の終焉と明治維新の中心人物であり、五箇条の御誓文を発し、日本の近代化を推進した。">
+                        明治天皇 <span class="text-sm font-normal">第122代</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 昭和天皇 (左) -->
+            <div class="relative mb-12">
+                <div class="absolute w-5 h-5 bg-blue-600 rounded-full z-10 left-4 md:left-1/2 -translate-x-1/2 mt-2"></div>
+                <div class="w-full ml-12 md:ml-0 md:w-1/2 md:pr-10">
+                    <div class="bg-red-50 p-4 rounded-lg shadow-md md:text-right">
+                        <div class="emperor-box cursor-pointer hover:scale-105 transition-transform duration-200 bg-blue-600 text-white p-3 rounded-lg font-semibold z-10 shadow-md inline-block mb-2"
+                             data-title="昭和天皇"
+                             data-description="第124代天皇である。激動の時代に在位し、第二次世界大戦を経て、戦後は象徴天皇として国民に寄り添った。日本の復興と発展を見届けた天皇である。">
+                            昭和天皇 <span class="text-sm font-normal">第124代</span>
+                        </div>
+                        <h3 class="font-semibold text-red-800">皇室典範の改正</h3>
+                        <p class="text-sm text-gray-600">1947年、GHQの指導のもと、11宮家51名が皇籍を離脱した。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 徳仁天皇 (右) -->
+            <div class="relative mb-4">
+                <div class="absolute w-5 h-5 bg-blue-600 rounded-full z-10 left-4 md:left-1/2 -translate-x-1/2 mt-2"></div>
+                <div class="w-full ml-12 md:w-1/2 md:ml-[50%] md:pl-10">
+                     <div class="bg-blue-50 p-4 rounded-lg shadow-md">
+                        <div class="emperor-box cursor-pointer hover:scale-105 transition-transform duration-200 bg-blue-600 text-white p-3 rounded-lg font-semibold z-10 shadow-md inline-block mb-2"
+                             data-title="徳仁天皇（今上天皇）"
+                             data-description="現在の第126代天皇である。令和時代の象徴として、国内外で活動されている。皇位継承者の減少が現代皇室の重要な課題となっている。">
+                            徳仁天皇 <span class="text-sm font-normal">第126代</span>
+                        </div>
+                        <h3 class="font-semibold text-blue-800">現代の課題</h3>
+                        <p class="text-sm text-gray-600">安定的な皇位継承と皇族数の確保が議論されている。</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- モーダル表示エリア -->
+    <div id="modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4">
+        <!-- オーバーレイ -->
+        <div id="modal-overlay" class="absolute inset-0 bg-black bg-opacity-60"></div>
+        
+        <!-- モーダルコンテンツ -->
+        <div id="modal-content" class="relative bg-white w-full max-w-md p-6 rounded-2xl shadow-xl transform scale-95">
+            <h3 id="modal-title" class="text-2xl font-bold text-gray-800 mb-4"></h3>
+            <p id="modal-description" class="text-gray-600 leading-relaxed"></p>
+            <button id="modal-close" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // --- モーダル制御のためのJavaScript ---
+        const modal = document.getElementById('modal');
+        const modalOverlay = document.getElementById('modal-overlay');
+        const modalContent = document.getElementById('modal-content');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const modalClose = document.getElementById('modal-close');
+        
+        const emperorBoxes = document.querySelectorAll('.emperor-box');
+
+        const showModal = (title, description) => {
+            modalTitle.textContent = title;
+            modalDescription.textContent = description;
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modalOverlay.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+            }, 10);
+        };
+
+        const hideModal = () => {
+            modalOverlay.classList.add('opacity-0');
+            modalContent.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        };
+
+        emperorBoxes.forEach(box => {
+            box.addEventListener('click', () => {
+                const title = box.getAttribute('data-title');
+                const description = box.getAttribute('data-description');
+                showModal(title, description);
+            });
+        });
+
+        modalClose.addEventListener('click', hideModal);
+        modalOverlay.addEventListener('click', hideModal);
+        
+        modalOverlay.classList.add('opacity-0');
+        modalContent.classList.add('scale-95');
+
+    </script>
+</body>
+</html>
